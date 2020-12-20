@@ -87,7 +87,7 @@ body{
     margin-right: 50px;
 }
 .text{
-    max-width: 600px;
+    max-width: 500px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
@@ -120,7 +120,7 @@ body{
     font-size: 1em;
     line-height: 2em;
     color: white;
-    margin-top: 105px;
+    margin-top: 73px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -130,7 +130,7 @@ body{
     font-size: 1em;
     line-height: 2em;
     color: red;
-    margin-top: 105px;
+    margin-top: 73px;
     margin-left: 0px;
     margin-right: 50px;
 }
