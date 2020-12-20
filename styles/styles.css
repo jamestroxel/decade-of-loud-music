@@ -1,0 +1,158 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+.title{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1em;
+    color: red;
+    margin: 50px;
+}
+.subtitle{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+    color: white;
+    margin-top: 130px;
+    margin-left: 50px;
+}
+.time{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    color: white;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    position: fixed;
+    top:0;
+    width: 100%;
+    pointer-events: none;
+}
+.item1{
+    display: flex;
+    width:50%;
+    min-width: 800px;
+}
+.item2{
+    display: flex;
+    width:50%;
+}
+.legend{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+    padding-left: 25px;
+    color: red;
+    margin-top: 225px;
+    margin-left: -28px;
+    margin-right: 50px;
+    border-color: white;
+    border-style: solid;
+    border-left: 3.6862;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+.textHead{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 2em;
+    color: red;
+    margin-top: 150px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.text{
+    max-width: 600px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+    color: white;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.years{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+    color: white;
+}
+.legendText{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+    color: red;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.sourceText{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+    color: white;
+    margin-top: 105px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.source{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+    color: red;
+    margin-top: 105px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.vignette{
+    fill: url(#grad1);
+}
+div.tooltip {
+    display: inline;
+    font-size: 1em;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    text-align: left;
+    /* width: 100px; */
+    /* height: 15px; */
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:0px;
+    background: white;
+    border: 0px;
+    border-radius: 18px;
+    pointer-events: none;
+  }
