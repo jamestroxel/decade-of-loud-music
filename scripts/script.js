@@ -1,13 +1,13 @@
 
 //global variables
-let svgHeight = 2500
+let svgHeight = 900
 let svgWidth = 2000
 
 let margin = {
     left: 50,
     right: 50,
-    top: 50,
-    bottom: 50
+    top: 0,
+    bottom: 00
 }
 //inner width & height 
 let height = svgHeight - margin.top - margin.bottom
@@ -95,7 +95,7 @@ d3.json('data/monthly.json').then(data =>{
     .attr('stroke-width', function(d){return ringScale(d.count);})
     .attr('stroke', "white")
     .attr('cx', 50)
-    .attr('cy', height / 6)
+    .attr('cy', height / 2.25)
     .attr('r', function(d, i){ return i * 5})
     .on('mouseover', mouseover)
     .on('mouseout', mouseout);
@@ -124,7 +124,7 @@ d3.json('data/monthly.json').then(data =>{
     .attr('x', 0)
     .attr('y', 0)
     .attr('pointer-events', 'none')
-    .attr('height', svgHeight*.5)
+    .attr('height', svgHeight*1.4)
     .attr('width', svgWidth)
     .attr('fill', 'url(#grad1)');
 
@@ -135,7 +135,7 @@ d3.json('data/monthly.json').then(data =>{
     .attr('pointer-events', 'none')
     .attr('fill', 'red')
     .attr('cx', function(d, i){ return 50+(i*4) * 5})
-    .attr('cy', height / 6)
+    .attr('cy', height / 2.25)
     .attr('r', 2.5)
     svg.append('g')
     .attr('class', 'axis')
@@ -147,7 +147,7 @@ d3.json('data/monthly.json').then(data =>{
     .attr('x1',function(d, i){ return 50+(i*12) * 5})
     .attr('x2',function(d, i){ return 50+(i*12) * 5})
     .attr('y1', 800)
-    .attr('y2',height / 6);
+    .attr('y2',height / 2.25);
     
     svg.append('g')
     .selectAll('text')
@@ -158,6 +158,9 @@ d3.json('data/monthly.json').then(data =>{
     .attr('x', function(d, i){ return 60+(i*12) * 5})
     .attr('y', 800)
     .html(function(d){ return d})
+
+    svg.append('line')
+    .attr('stroke-width', function(d){return ringScale(50000);})
 
 });
 
