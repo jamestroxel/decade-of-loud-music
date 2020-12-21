@@ -158,9 +158,9 @@ d3.json('data/monthly.json').then(data =>{
     .attr('x', function(d, i){ return 60+(i*12) * 5})
     .attr('y', 800)
     .html(function(d){ return d})
-
-    svg.append('line')
-    .attr('stroke-width', function(d){return ringScale(50000);})
+    // scale
+    // svg.append('line')
+    // .attr('stroke-width', function(d){return ringScale(50000);})
 
 });
 
