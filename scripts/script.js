@@ -1,5 +1,4 @@
 
-
 //global variables
 let svgHeight = 2500
 let svgWidth = 2000
@@ -65,14 +64,14 @@ let filter = d3.select('defs')
 // .append('g')
 // .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 // $select=date_extract_y(created_date) as year, date_extract_m(created_date) as month, descriptor='Loud Music/Party', count(*)&$group=year, month, descriptor='Loud Music/Party'
-d3.json("https://data.cityofnewyork.us/resource/erm2-nwe9.json?$select=date_extract_y(created_date)%20as%20year,%20date_extract_m(created_date)%20as%20month,%20descriptor=%27Loud%20Music/Party%27,%20count(*)&$group=year,%20month,%20descriptor=%27Loud%20Music/Party%27").then(data =>{
-    let monthly = data.filter(d => d.descriptor_Loud_Music_Party == true)
-    monthly.forEach(d=>{
-        d.count= +d.count
-        d.month= +d.month
-        d.year= +d.year
-    });
-    console.log(monthly);
+d3.json('data/monthly.json').then(data =>{
+    // let monthly = data.filter(d => d.descriptor_Loud_Music_Party == true)
+    // monthly.forEach(d=>{
+    //     d.count= +d.count
+    //     d.month= +d.month
+    //     d.year= +d.year
+    // });
+    console.log(data);
 
     let years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
     let xScale = d3.scaleLinear()
@@ -81,7 +80,7 @@ d3.json("https://data.cityofnewyork.us/resource/erm2-nwe9.json?$select=date_extr
 
     let ringScale = d3.scaleLinear()
     .domain(d3.extent(data, d => d.count))
-    .range([.1,2]);
+    .range([.1,4]);
 
     var div = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -89,7 +88,7 @@ d3.json("https://data.cityofnewyork.us/resource/erm2-nwe9.json?$select=date_extr
 
     svg.append("g")
     .selectAll('circle')
-    .data(monthly)
+    .data(data)
     .join('circle')
     .attr('class', 'ring')
     .attr('fill', 'none')
@@ -131,7 +130,7 @@ d3.json("https://data.cityofnewyork.us/resource/erm2-nwe9.json?$select=date_extr
 
 
     let axis = svg.append('g').selectAll('circle')
-    .data(monthly)
+    .data(data)
     .join('circle')
     .attr('pointer-events', 'none')
     .attr('fill', 'red')

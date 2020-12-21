@@ -1,0 +1,794 @@
+[
+    {
+        "year": 2010,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7481
+    },
+    {
+        "year": 2010,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7133
+    },
+    {
+        "year": 2010,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7409
+    },
+    {
+        "year": 2010,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9224
+    },
+    {
+        "year": 2010,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11519
+    },
+    {
+        "year": 2010,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 8568
+    },
+    {
+        "year": 2010,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 8346
+    },
+    {
+        "year": 2010,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9803
+    },
+    {
+        "year": 2010,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10181
+    },
+    {
+        "year": 2010,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9845
+    },
+    {
+        "year": 2010,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7709
+    },
+    {
+        "year": 2010,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 6683
+    },
+    {
+        "year": 2011,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 6825
+    },
+    {
+        "year": 2011,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 6377
+    },
+    {
+        "year": 2011,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7165
+    },
+    {
+        "year": 2011,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7746
+    },
+    {
+        "year": 2011,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10016
+    },
+    {
+        "year": 2011,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9165
+    },
+    {
+        "year": 2011,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9017
+    },
+    {
+        "year": 2011,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7743
+    },
+    {
+        "year": 2011,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10067
+    },
+    {
+        "year": 2011,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 8858
+    },
+    {
+        "year": 2011,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7541
+    },
+    {
+        "year": 2011,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 8167
+    },
+    {
+        "year": 2012,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7601
+    },
+    {
+        "year": 2012,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 6999
+    },
+    {
+        "year": 2012,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 8919
+    },
+    {
+        "year": 2012,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9345
+    },
+    {
+        "year": 2012,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11579
+    },
+    {
+        "year": 2012,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11095
+    },
+    {
+        "year": 2012,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10407
+    },
+    {
+        "year": 2012,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11107
+    },
+    {
+        "year": 2012,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 13495
+    },
+    {
+        "year": 2012,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9582
+    },
+    {
+        "year": 2012,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 7189
+    },
+    {
+        "year": 2012,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9834
+    },
+    {
+        "year": 2013,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 8690
+    },
+    {
+        "year": 2013,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 8135
+    },
+    {
+        "year": 2013,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10175
+    },
+    {
+        "year": 2013,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10542
+    },
+    {
+        "year": 2013,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14505
+    },
+    {
+        "year": 2013,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15400
+    },
+    {
+        "year": 2013,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11546
+    },
+    {
+        "year": 2013,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15599
+    },
+    {
+        "year": 2013,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14123
+    },
+    {
+        "year": 2013,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11436
+    },
+    {
+        "year": 2013,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10718
+    },
+    {
+        "year": 2013,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10367
+    },
+    {
+        "year": 2014,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9376
+    },
+    {
+        "year": 2014,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9068
+    },
+    {
+        "year": 2014,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11227
+    },
+    {
+        "year": 2014,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12321
+    },
+    {
+        "year": 2014,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 19980
+    },
+    {
+        "year": 2014,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 21891
+    },
+    {
+        "year": 2014,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 18394
+    },
+    {
+        "year": 2014,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 22730
+    },
+    {
+        "year": 2014,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 17436
+    },
+    {
+        "year": 2014,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15412
+    },
+    {
+        "year": 2014,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 13274
+    },
+    {
+        "year": 2014,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12911
+    },
+    {
+        "year": 2015,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12053
+    },
+    {
+        "year": 2015,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 9985
+    },
+    {
+        "year": 2015,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11981
+    },
+    {
+        "year": 2015,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15537
+    },
+    {
+        "year": 2015,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 25711
+    },
+    {
+        "year": 2015,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 20646
+    },
+    {
+        "year": 2015,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 21422
+    },
+    {
+        "year": 2015,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 23460
+    },
+    {
+        "year": 2015,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 21293
+    },
+    {
+        "year": 2015,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15837
+    },
+    {
+        "year": 2015,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14437
+    },
+    {
+        "year": 2015,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15360
+    },
+    {
+        "year": 2016,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12171
+    },
+    {
+        "year": 2016,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 10977
+    },
+    {
+        "year": 2016,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 13880
+    },
+    {
+        "year": 2016,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 17718
+    },
+    {
+        "year": 2016,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 25192
+    },
+    {
+        "year": 2016,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 25933
+    },
+    {
+        "year": 2016,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 24502
+    },
+    {
+        "year": 2016,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 20833
+    },
+    {
+        "year": 2016,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 25000
+    },
+    {
+        "year": 2016,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 19332
+    },
+    {
+        "year": 2016,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14146
+    },
+    {
+        "year": 2016,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15182
+    },
+    {
+        "year": 2017,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14236
+    },
+    {
+        "year": 2017,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12616
+    },
+    {
+        "year": 2017,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12626
+    },
+    {
+        "year": 2017,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 21215
+    },
+    {
+        "year": 2017,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 23195
+    },
+    {
+        "year": 2017,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 28087
+    },
+    {
+        "year": 2017,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 28633
+    },
+    {
+        "year": 2017,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 25157
+    },
+    {
+        "year": 2017,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 26571
+    },
+    {
+        "year": 2017,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 21748
+    },
+    {
+        "year": 2017,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 13577
+    },
+    {
+        "year": 2017,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14664
+    },
+    {
+        "year": 2018,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12816
+    },
+    {
+        "year": 2018,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12040
+    },
+    {
+        "year": 2018,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 13548
+    },
+    {
+        "year": 2018,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 16663
+    },
+    {
+        "year": 2018,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 25250
+    },
+    {
+        "year": 2018,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 28898
+    },
+    {
+        "year": 2018,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 26073
+    },
+    {
+        "year": 2018,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 21505
+    },
+    {
+        "year": 2018,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 26209
+    },
+    {
+        "year": 2018,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 18014
+    },
+    {
+        "year": 2018,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 13333
+    },
+    {
+        "year": 2018,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15120
+    },
+    {
+        "year": 2019,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 12391
+    },
+    {
+        "year": 2019,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 11441
+    },
+    {
+        "year": 2019,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15456
+    },
+    {
+        "year": 2019,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 19065
+    },
+    {
+        "year": 2019,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 29539
+    },
+    {
+        "year": 2019,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 36390
+    },
+    {
+        "year": 2019,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 27166
+    },
+    {
+        "year": 2019,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 28369
+    },
+    {
+        "year": 2019,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 30237
+    },
+    {
+        "year": 2019,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 20368
+    },
+    {
+        "year": 2019,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 15033
+    },
+    {
+        "year": 2019,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14350
+    },
+    {
+        "year": 2020,
+        "month": 1,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14237
+    },
+    {
+        "year": 2020,
+        "month": 2,
+        "descriptor_Loud_Music_Party": true,
+        "count": 13305
+    },
+    {
+        "year": 2020,
+        "month": 3,
+        "descriptor_Loud_Music_Party": true,
+        "count": 17311
+    },
+    {
+        "year": 2020,
+        "month": 4,
+        "descriptor_Loud_Music_Party": true,
+        "count": 20401
+    },
+    {
+        "year": 2020,
+        "month": 5,
+        "descriptor_Loud_Music_Party": true,
+        "count": 48738
+    },
+    {
+        "year": 2020,
+        "month": 6,
+        "descriptor_Loud_Music_Party": true,
+        "count": 74602
+    },
+    {
+        "year": 2020,
+        "month": 7,
+        "descriptor_Loud_Music_Party": true,
+        "count": 67487
+    },
+    {
+        "year": 2020,
+        "month": 8,
+        "descriptor_Loud_Music_Party": true,
+        "count": 77076
+    },
+    {
+        "year": 2020,
+        "month": 9,
+        "descriptor_Loud_Music_Party": true,
+        "count": 71019
+    },
+    {
+        "year": 2020,
+        "month": 10,
+        "descriptor_Loud_Music_Party": true,
+        "count": 50477
+    },
+    {
+        "year": 2020,
+        "month": 11,
+        "descriptor_Loud_Music_Party": true,
+        "count": 32595
+    },
+    {
+        "year": 2020,
+        "month": 12,
+        "descriptor_Loud_Music_Party": true,
+        "count": 14146
+    }
+]
