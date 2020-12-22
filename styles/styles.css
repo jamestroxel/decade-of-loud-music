@@ -46,6 +46,16 @@ body{
     margin-top: 180px;
     margin-left: 50px;
 }
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    position: fixed;
+    top:0;
+    width: 100%;
+    /* pointer-events: none; */
+}
 .container{
     display: flex;
     justify-content: flex-start;
@@ -103,6 +113,17 @@ body{
     margin-left: 0px;
     margin-right: 50px;
 }
+.gitHub{
+    max-width: 500px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+    color: #303030;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
 .years{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
@@ -137,9 +158,11 @@ body{
     font-size: 1em;
     line-height: 2em;
     color: red;
-    margin-top: 50px;
+    margin-top: 779px;
     margin-left: 0px;
     margin-right: 50px;
+    position: absolute;
+    top:0;
 }
 .vignette{
     fill: url(#grad1);
