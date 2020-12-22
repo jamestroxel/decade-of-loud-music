@@ -57,20 +57,8 @@ let filter = d3.select('defs')
       .attr("in", "SourceGraphic");
     
 
-   
 
-
-// let group = d3.select('.svg')
-// .append('g')
-// .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-// $select=date_extract_y(created_date) as year, date_extract_m(created_date) as month, descriptor='Loud Music/Party', count(*)&$group=year, month, descriptor='Loud Music/Party'
 d3.json('data/monthly.json').then(data =>{
-    // let monthly = data.filter(d => d.descriptor_Loud_Music_Party == true)
-    // monthly.forEach(d=>{
-    //     d.count= +d.count
-    //     d.month= +d.month
-    //     d.year= +d.year
-    // });
     console.log(data);
 
     let years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]

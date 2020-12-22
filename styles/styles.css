@@ -114,15 +114,21 @@ body{
     margin-right: 50px;
 }
 .gitHub{
-    max-width: 500px;
+    height: 18px;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: .75em;
-    line-height: 2em;
+    /* line-height: 2em; */
     color: #1f262a;
     margin-top: 50px;
     margin-left: 0px;
     margin-right: 50px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top:2px;
+    padding-bottom: 0px;
+    border: #1f262a;
+    border-style: solid;
     text-decoration: none;
 }
 .years{
