@@ -1,7 +1,7 @@
 # A Decade of Loud Music
 https://jamestroxel.github.io/decade-of-loud-music/
 
-This visualization reimagines the past decade's worth of #311 "loud music" complaint data as a series of concentric rings of varying thickness made to resemble a vinyl record, speaker, or sound wave. The width of each ring is determined by the count for each month and a tooltip allows the user to hover over each of these to reveal the total number of complaints for the month.
+This visualization reimagines the past decade's worth of #311 "loud music" complaint data as a series of concentric rings of varying thicknesses made to resemble a vinyl record, speaker, or sound wave. The width of each ring is determined by the count for each month and a tooltip allows the user to hover over each of these to reveal the total number of complaints for the month.
 
 ![Alt text](/documentation/screengrab.png?raw=true)
 
