@@ -12,5 +12,5 @@ The data was gathered in the "node.js" script from the roughly 25 million 311 ca
 
 ![Alt text](/documentation/data.png?raw=true)
 
-After that, I simply filtered the "true" results, parsed the number strings and wrote the  "monthly.json" using the fs module. The rest was done using d3, some vanilla javascript, html and css.
+After that, I simply filtered the "true" results, parsed the number strings and wrote the  "monthly.json" using the fs module. The front end was handled with d3, some vanilla javascript, html and css.
 
