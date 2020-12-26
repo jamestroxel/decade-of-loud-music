@@ -18,7 +18,28 @@ body{
     font-size: 2em;
     line-height: 1em;
     color: red;
-    margin: 50px;
+    margin: 60px;
+}
+.title2{
+    /* width: 50%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: red;
+    margin: 58px;
+    margin-top: 92px;
+    padding-bottom: 15px;
+    border: red;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 5px;
+
 }
 .subtitle{
     width: 50%;
@@ -28,10 +49,10 @@ body{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
-    line-height: 1em;
+    line-height: 1.25em;
     color: white;
-    margin-top: 130px;
-    margin-left: 50px;
+    margin-top: 185px;
+    margin-left: 60px;
 }
 .time{
     width: 50%;
@@ -42,9 +63,9 @@ body{
     font-weight: 700;
     font-size: 1em;
     line-height: 1em;
-    color: white;
-    margin-top: 180px;
-    margin-left: 50px;
+    color: red;
+    margin-top: 225px;
+    margin-left: 60px;
 }
 .nav{
     display: flex;
@@ -120,15 +141,19 @@ body{
     font-size: .75em;
     /* line-height: 2em; */
     color: #1f262a;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: 0px;
     margin-right: 50px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top:2px;
     padding-bottom: 0px;
     border: #1f262a;
     border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-width: 5px;
     text-decoration: none;
 }
 .years{

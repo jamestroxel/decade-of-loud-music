@@ -74,6 +74,19 @@ d3.json('data/monthly.json').then(data =>{
     .attr("class", "tooltip")
     .style("opacity", 0);
 
+    
+    svg.append('g')
+    .attr('class', 'axis')
+    .selectAll('line')
+    .data(years)
+    .join('line')
+    .attr('stroke', 'red')
+    .attr('stroke-width', 1)
+    .attr('x1',function(d, i){ return 50+(i*12) * 5})
+    .attr('x2',function(d, i){ return 50+(i*12) * 5})
+    .attr('y1', 800)
+    .attr('y2',height / 2.25);
+
     svg.append("g")
     .selectAll('circle')
     .data(data)
@@ -116,7 +129,6 @@ d3.json('data/monthly.json').then(data =>{
     .attr('width', svgWidth)
     .attr('fill', 'url(#grad1)');
 
-
     let axis = svg.append('g').selectAll('circle')
     .data(data)
     .join('circle')
@@ -124,18 +136,8 @@ d3.json('data/monthly.json').then(data =>{
     .attr('fill', 'red')
     .attr('cx', function(d, i){ return 50+(i*4) * 5})
     .attr('cy', height / 2.25)
-    .attr('r', 2.5)
-    svg.append('g')
-    .attr('class', 'axis')
-    .selectAll('line')
-    .data(years)
-    .join('line')
-    .attr('stroke', 'red')
-    .attr('stroke-width', 1)
-    .attr('x1',function(d, i){ return 50+(i*12) * 5})
-    .attr('x2',function(d, i){ return 50+(i*12) * 5})
-    .attr('y1', 800)
-    .attr('y2',height / 2.25);
+    .attr('r', 2.5);
+   
     
     svg.append('g')
     .selectAll('text')
