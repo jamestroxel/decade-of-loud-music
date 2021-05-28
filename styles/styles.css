@@ -17,13 +17,17 @@ a:visited{
     /* display:flex;
     flex-direction: column; */
     height: 100%;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
 #viz{
     /* position: absolute;
     top: 0;
     left: 0; */
     overflow-y: hidden;
+}
+#vizFull{
+    height:100%;
+    /* overflow-y: hidden; */
 }
 .title{
     display: inline;
@@ -101,11 +105,11 @@ a:visited{
     /* position: absolute;
     top:0; */
     /* margin-bottom:0; */
-    height: 100%;
+    /* height: 100%; */
     width: 100vw;
     margin-left:0px;
     /* pointer-events: none; */
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     background:black;
 }
 .content{
@@ -126,7 +130,9 @@ a:visited{
     align-items:flex-start; */
     display:grid;
     grid-template-columns: 40% 60%;
+    height:100%;
     margin:0px;
+    overflow-y: visible;
 }
 .navItem1{
     display: flex;
@@ -167,93 +173,35 @@ a:visited{
     flex-direction: column;
     flex-wrap: wrap; */
     width:100%;
-    height:50%;
-    margin-left:0px;
+    height:50vh;
+    margin:0px;
     background:black;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
-@media only screen and (max-width: 375px) {
-    .title{
-        display: inline;
-        /* position: absolute;
-        top: 0;
-        left: 0; */
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 1em;
-        /* line-height: 1em; */
-        color: red;
-    }
-    .navItem1{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width:100%;
-    }
-    .container{
-        display: flex;
-        height: 100px;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        /* position: fixed;
-        bottom:0;
-        margin-bottom:0; */
-        /* width: 100%; */
-        margin-left:10px;
-        pointer-events: none;
-        overflow-y: scroll;
-        background:black;
-    }
-    .item1{
-        /* height:100%; */
-        /* display: flex;
-        flex-direction: column;
-        flex-wrap: wrap; */
-        /* width:100%; */
-        /* overflow-y: scroll; */
-    }
-    /* .svg-container {
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        width: 100%;
-        height: 100px;
-        padding-bottom: 100%;
-        vertical-align: top;
-        overflow: hidden;
-      }
-      .svg-content-responsive {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        overflow: hidden;
 
-      } */
-  }
 .item2{
     display: flex;
     width:50%;
 }
 
 .legend{
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 2em;
-    line-height: 2em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     /* padding-left: 25px; */
+    background: lightcoral;
     color: white;
+    height:auto;
+    width:100%;
+    padding:0px;
     margin-left: 0px;
     margin-right: 0px;
+    border-left-width: 0px;
+    border-top: 2px;
+    border-right: 0px;
+    border-bottom: 2px;
     border-color: white;
     border-style: solid;
-    border-left-width: 2.5px;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
 } 
 .textHead{
     font-family: 'DM Sans', sans-serif;
@@ -320,12 +268,15 @@ a:visited{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 2em;
-    line-height: 2em;
-    color: red;
-    background-color: black;
-    margin-top: 10px;
+    /* line-height: 2em; */
+    width:60%;
+    color: white;
+    /* background-color: lightcoral; */
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom:0px;
+    float:right;
 }
 .sourceText{
     font-family: 'DM Sans', sans-serif;
@@ -382,7 +333,7 @@ div.tooltip {
     margin:0px;
     background: white;
     border: 0px;
-    border-radius: 18px;
+    /* border-radius: 18px; */
     pointer-events: none;
   }
   .svg-container {
@@ -418,6 +369,7 @@ div.tooltip {
     align-items: center;
     position: relative;
     width: 100%;
+    height:auto;
     padding-bottom: 100%;
     vertical-align: top;
     overflow: visible;
@@ -429,11 +381,52 @@ div.tooltip {
     left: 0;
     /* overflow: hidden; */
   }
+  .svgScale-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height:100%;
+    padding:0px;
+    /* padding-bottom: 100%; */
+    vertical-align:middle;
+    overflow: hidden;
+  }
+  .svgScale-content-responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin-top:50%;
+    margin-bottom:50%; */
+    width: 100vw;
+    /* overflow: hidden; */
+  }
+  #scale{
+      /* height:50px; */
+      width:40%;
+  }
   footer{
     font-size: 2em;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     color:white;
+    float:right;
+    position:relative;
+    bottom:0;
+    right:0;
+    /* margin-right:25px; */
+  }
+  footer:hover{
+    font-size: 2em;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color:lightcoral;
     float:right;
   }
   .emphasis{
@@ -463,4 +456,10 @@ div.tooltip {
     font-size: 2em;
     text-align: right;
     margin:0px;
+}
+.left-wrap{
+    display:flex;
+    flex-direction: column;
+    height:auto;
+    width:100%;
 }

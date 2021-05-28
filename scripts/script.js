@@ -40,7 +40,13 @@ const svg2 = d3.select('#viz2')
 .attr("preserveAspectRatio", "xMinYMin meet")
 .attr("viewBox", "0 0 250 1000")
 .classed("svg-content-responsive", true)
-
+const scale = d3.select('#scale')
+    .append("div")
+    .classed("svgScale-container", true) 
+    .append('svg')
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 655 555")
+    .classed("svgScale-content-responsive", true)
 let defs = d3.selectAll('svg')
     .append('defs')
     .append('radialGradient')
@@ -167,14 +173,26 @@ d3.json('data/monthly.json').then(data =>{
     .attr('r', function(d, i){ return i * 5})
     .on('mouseover', mouseover)
     .on('mouseout', mouseout);
-    
+
+    scale.append("g")
+    .append('line')
+    .attr('class', 'ring')
+    .attr('fill', 'none')
+    .attr('stroke-width', ringScale(50000))
+    .attr('stroke', "white")
+    .attr('x1', 25)
+    .attr('x2',25)
+    .attr('y1', 0)
+    .attr('y2', height)
+
+
     function mouseover(event, d) {
         d3.select(this)
         .attr('stroke-width', function(d){return ringScale(d.count) + 2.5;})
         .attr("filter", "url(#dropShadow)");
         div.transition()
          .duration(200)
-         .style("opacity", .9);
+         .style("opacity", 1);
        div.html(d.count)
          .style("left", (event.pageX) + "px")
          .style("top", (event.pageY - 40) + "px");
