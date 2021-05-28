@@ -1,13 +1,16 @@
 
 //global variables
-let svgHeight = 900
-let svgWidth = 2000
+let svgFullHeight = 100;
+let svgHeight = 1000;
+let svgWidth = 1000
+
+
 
 let margin = {
-    left: 50,
-    right: 50,
+    left: 0,
+    right: 0,
     top: 0,
-    bottom: 00
+    bottom: 0
 }
 //inner width & height 
 let height = svgHeight - margin.top - margin.bottom
@@ -15,12 +18,30 @@ let width = svgWidth - margin.left - margin.right
 
 // setup svg & add group
 const svg = d3.select('#viz')
+    .append("div")
+    .classed("svg-container", true) 
     .append('svg')
-    .attr('class', 'svg')
-    .attr('height', svgHeight)
-    .attr('width', svgWidth);
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 250 1000")
+    .classed("svg-content-responsive", true)
+    // .attr('height', svgHeight)
+    // .attr('width', svgWidth);
+const svgFull = d3.select('#vizFull')
+    .append("div")
+    .classed("svgFull-container", true) 
+    .append('svg')
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 655 1000")
+    .classed("svgFull-content-responsive", true)
+const svg2 = d3.select('#viz2')
+.append("div")
+.classed("svg-container2", true) 
+.append('svg')
+.attr("preserveAspectRatio", "xMinYMin meet")
+.attr("viewBox", "0 0 250 1000")
+.classed("svg-content-responsive", true)
 
-let defs = d3.select('.svg')
+let defs = d3.selectAll('svg')
     .append('defs')
     .append('radialGradient')
     .attr('id', 'grad1')
@@ -59,7 +80,6 @@ let filter = d3.select('defs')
 
 
 d3.json('data/monthly.json').then(data =>{
-    console.log(data);
 
     let years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
     let xScale = d3.scaleLinear()
@@ -75,17 +95,36 @@ d3.json('data/monthly.json').then(data =>{
     .style("opacity", 0);
 
     
-    svg.append('g')
-    .attr('class', 'axis')
-    .selectAll('line')
-    .data(years)
-    .join('line')
-    .attr('stroke', 'red')
-    .attr('stroke-width', 1)
-    .attr('x1',function(d, i){ return 50+(i*12) * 5})
-    .attr('x2',function(d, i){ return 50+(i*12) * 5})
-    .attr('y1', 800)
-    .attr('y2',height / 2.25);
+    // svgFull.append('g')
+    // .attr('class', 'axis')
+    // .selectAll('line')
+    // .data(years)
+    // .join('line')
+    // .attr('stroke', 'red')
+    // .attr('stroke-width', 1)
+    // .attr('x1',function(d, i){ return (i*12) * 5})
+    // .attr('x2',function(d, i){ return (i*12) * 5})
+    // .attr('y1', svgFullHeight/ 2)
+    // .attr('y2',svgHeight/2);
+
+    // svgFull.append('g')
+    // .attr('class', 'axis')
+    // .selectAll('line')
+    // .data(years)
+    // .join('line')
+    // .attr('stroke', 'red')
+    // .attr('stroke-width', 1)
+    // .attr('y1',function(d, i){ return height/4+(i*12) * 5})
+    // .attr('y2',function(d, i){ return height/4+(i*12) * 5})
+    // .attr('x1', 0)
+    // .attr('x2',width);
+    // let vignette = svgFull.append('rect')
+    // .attr('x', 0)
+    // .attr('y', 0)
+    // .attr('pointer-events', 'none')
+    // .attr('height', svgHeight*1.4)
+    // .attr('width', svgWidth)
+    // .attr('fill', 'url(#grad1)');
 
     svg.append("g")
     .selectAll('circle')
@@ -95,11 +134,40 @@ d3.json('data/monthly.json').then(data =>{
     .attr('fill', 'none')
     .attr('stroke-width', function(d){return ringScale(d.count);})
     .attr('stroke', "white")
-    .attr('cx', 50)
-    .attr('cy', height / 2.25)
+    .attr('cx', svg.width)
+    .attr('cy', height/4)
     .attr('r', function(d, i){ return i * 5})
     .on('mouseover', mouseover)
     .on('mouseout', mouseout);
+
+    svg2.append("g")
+    .selectAll('circle')
+    .data(data)
+    .join('circle')
+    .attr('class', 'ring')
+    .attr('fill', 'none')
+    .attr('stroke-width', function(d){return ringScale(d.count);})
+    .attr('stroke', "white")
+    .attr('cx', svg.width)
+    .attr('cy', height/4)
+    .attr('r', function(d, i){ return i * 5})
+    .on('mouseover', mouseover)
+    .on('mouseout', mouseout);
+
+    svgFull.append("g")
+    .selectAll('circle')
+    .data(data)
+    .join('circle')
+    .attr('class', 'ring')
+    .attr('fill', 'none')
+    .attr('stroke-width', function(d){return ringScale(d.count);})
+    .attr('stroke', "white")
+    .attr('cx', svgFull.width)
+    .attr('cy', svgFullHeight/4)
+    .attr('r', function(d, i){ return i * 5})
+    .on('mouseover', mouseover)
+    .on('mouseout', mouseout);
+    
     function mouseover(event, d) {
         d3.select(this)
         .attr('stroke-width', function(d){return ringScale(d.count) + 2.5;})
@@ -121,33 +189,28 @@ d3.json('data/monthly.json').then(data =>{
     }
     
 
-    let vignette = svg.append('rect')
-    .attr('x', 0)
-    .attr('y', 0)
-    .attr('pointer-events', 'none')
-    .attr('height', svgHeight*1.4)
-    .attr('width', svgWidth)
-    .attr('fill', 'url(#grad1)');
+    
 
-    let axis = svg.append('g').selectAll('circle')
+    let axis = svgFull.append('g').selectAll('circle')
     .data(data)
     .join('circle')
     .attr('pointer-events', 'none')
-    .attr('fill', 'red')
-    .attr('cx', function(d, i){ return 50+(i*4) * 5})
-    .attr('cy', height / 2.25)
-    .attr('r', 2.5);
+    .attr('fill', 'white')
+    .attr('cx', function(d, i){ return (i*3) * 5})
+    // .attr('cx', function(d, i){ for (i=0;i<120;i<=120){i = (i*3) * 5}})
+    .attr('cy', svgFullHeight / 4)
+    .attr('r', function(d, i){if (i % 4 == 0){ return 2}else{return 1}});
    
     
-    svg.append('g')
-    .selectAll('text')
-    .data(years)
-    .join('text')
-    .attr('fill', 'white')
-    .attr('class', 'years')
-    .attr('x', function(d, i){ return 60+(i*12) * 5})
-    .attr('y', 800)
-    .html(function(d){ return d})
+    // svgFull.append('g')
+    // .selectAll('text')
+    // .data(years)
+    // .join('text')
+    // .attr('fill', 'red')
+    // .attr('class', 'years')
+    // .attr('x', function(d, i){ return 5+(i*12) * 5})
+    // .attr('y', svgFullHeight)
+    // .html(function(d){ return d})
     // scale
     // svg.append('line')
     // .attr('stroke-width', function(d){return ringScale(50000);})

@@ -3,43 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A Decade of Loud Music</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 <body>
-    <div id="viz"></div>
-    <div class="nav">
-        <div class="item1">
-        </div>
-        <div class="item2">
-            <a class="gitHub" target="_blank" href='https://github.com/jamestroxel/decade-of-loud-music'>About</a>
-            <a class="source" target="_blank" href='https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9'><span class="sourceText">Source:</span> NYC Open Data</a>
+    <div class="page-wrap">
+        <div class="container">
+            <div class="item1">        
+                <div class="hero-viz">
+                    <div id="viz"></div>
+                </div>
+                <!-- <p class="legend">The width of this line is equal to 50,000 noise complaints.</p>
+                <p class="legendText">Each line represents 1 month.</p> -->
+            </div>
+            <div class="content">
+                <p class="textHead">2,310,094 total <br><span class="emphasis">loud music&nbsp; </span><br>complaints</p>
+                <p class="text">While New York City's annual lows for loud music complaints tend to settle at around the
+                same level each February, the May-June peaks have been steadily increasing
+                over the past decade. In fact, the monthly standard deviation has increased
+                2,207 percent since 2010. This phenomenon produces the unmistakeable
+                ripple effect seen in the interactive visualization seen here.</p>
+            </div>
+            <div class="content">
+                <a class="source" target="_blank" href='https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9'>Data</a>
+                <p class="twentyTen">2010</p>
+                <p class="twentyTwenty">2020</p>
+            </div>
+            <!-- <div class="axis">
+                <p class="year">2010</p>
+                <p class="year">2011</p>
+                <p class="year">2012</p>
+                <p class="year">2013</p>
+                <p class="year">2014</p>
+                <p class="year">2015</p>
+                <p class="year">2016</p>
+                <p class="year">2017</p>
+                <p class="year">2018</p>
+                <p class="year">2019</p>
+                <p class="year">2020</p>
+            </div> -->
+            <div class="heroContent">
+                <div id="viz2"></div>
+                <div id="vizFull"></div>
+            </div>
+            <p class="text">Each ring equals one month</p>
+            <footer><a href="#viz">&#8593;</a></footer>
         </div>
     </div>
-    <div class="container">
-        <div class="item1">
-            <p class="title">A decade</p>
-            <p class="title2">of loud music</p>
-            <p class="subtitle">311 calls in NYC for "loud music"</p>
-            <p class="time">2010-2020</p>
+    <div class="nav">
+        <div class="navItem1">
+            <p class="title">A decade of loud music</p>
         </div>
-        <div class="item2">
-            <div>
-                <p class="legend">The width of this line is equal to 50,000 noise complaints.</p>
-                <p class="legendText">Each line represents 1 month.</p>
-                <p class="textHead">2,310,094 total loud music complaints</p>
-                <p class="text">While New York City's annual lows for loud music complaints tend to settle at around the
-                    same level each February, the May-June peaks have been steadily increasing
-                    over the past decade. In fact, the monthly standard deviation has increased
-                    2,207 percent since 2010. This phenomenon produces the unmistakeable
-                    ripple effect seen in the interactive visualization to the left.</p>
-                <!-- <div class="source">
-                    <a class="source" target="_blank" href='https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9'><span class="sourceText">Source:</span> NYC Open Data</a>
-                </div> -->
-            </div>
+        <div class="navItem2">
+            <p class="subtitle">311 calls in NYC for "loud music" / 2010-2020</p>
+        </div>
+        <!-- <div class="navItem1">
+            <p class="time">2010-2020</p>
+        </div> -->
+        <div class="navItem3">
+            <a class="gitHub" target="_blank" href='https://github.com/jamestroxel/decade-of-loud-music'>About</a>
         </div>
     </div>
 <script src='scripts/script.js'></script>
