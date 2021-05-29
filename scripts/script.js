@@ -100,7 +100,7 @@ d3.json('data/monthly.json').then(data =>{
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-    
+
     // svgFull.append('g')
     // .attr('class', 'axis')
     // .selectAll('line')
@@ -143,7 +143,7 @@ d3.json('data/monthly.json').then(data =>{
     .attr('cx', svg.width)
     .attr('cy', height/4)
     .attr('r', function(d, i){ return i * 5})
-    .on('mouseover', mouseover)
+    .on('mouseover', mouseoverHero)
     .on('mouseout', mouseout);
 
     svg2.append("g")
@@ -157,7 +157,7 @@ d3.json('data/monthly.json').then(data =>{
     .attr('cx', svg.width)
     .attr('cy', height/4)
     .attr('r', function(d, i){ return i * 5})
-    .on('mouseover', mouseover)
+    .on('mouseover', mouseoverHero)
     .on('mouseout', mouseout);
 
     svgFull.append("g")
@@ -185,17 +185,31 @@ d3.json('data/monthly.json').then(data =>{
     .attr('y1', 0)
     .attr('y2', height)
 
-
+    // let newNum =
+    let newNum =[]
+    // num.forEach(e){
+        //   e.push(newNum).split(/(?=(?:\d{3})+$)/).join(",")
+        // }
+        
     function mouseover(event, d) {
+        let num = d.count.toLocaleString()
+            
         d3.select(this)
         .attr('stroke-width', function(d){return ringScale(d.count) + 2.5;})
         .attr("filter", "url(#dropShadow)");
         div.transition()
          .duration(200)
          .style("opacity", 1);
-       div.html(d.count)
+       div.html(num)
          .style("left", (event.pageX) + "px")
          .style("top", (event.pageY - 40) + "px");
+    }
+    function mouseoverHero(event, d) {
+        let num = d.count.toLocaleString()
+            
+        d3.select(this)
+        .attr('stroke-width', function(d){return ringScale(d.count) + 2.5;})
+        .attr("filter", "url(#dropShadow)");
     }
     function mouseout(event, d) {
         d3.select(this)
