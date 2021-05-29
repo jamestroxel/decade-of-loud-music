@@ -255,12 +255,12 @@ a:visited{
 }
 .legendText{
     font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1em;
     /* text-align: right; */
     /* line-height: 2em; */
     width:100%;
-    color: black;
+    color: white;
     /* background-color: lightcoral; */
     margin-top: 0px;
     margin-left: 0px;
@@ -548,6 +548,21 @@ div.tooltip {
         border-color: white;
         border-style: solid;
     } 
+    .legendText{
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        /* text-align: right; */
+        line-height: 2em;
+        width:100%;
+        color: white;
+        /* background-color: lightcoral; */
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom:10px;
+        /* float:right; */
+    }
     .twentyTen{
         display: inline;
         font-family: 'DM Sans', sans-serif;
