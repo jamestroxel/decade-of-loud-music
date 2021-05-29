@@ -10,7 +10,7 @@ The data was gathered in the "node.js" script from the roughly 25 million 311 ca
 
 `"https://data.cityofnewyork.us/resource/erm2-nwe9.json?$select=date_extract_y(created_date) as year, date_extract_m(created_date) as month, descriptor='Loud Music/Party', count(*)&$group=year, month, descriptor='Loud Music/Party"`
 
-![Alt text](/documentation/bottom.png?raw=true)
+![Alt text](/documentation/toolTip.png?raw=true)
 
 After that, I simply filtered the "true" results, parsed the number strings and wrote the  "monthly.json" using the fs module. The front end was handled with d3, some vanilla javascript, html and css.
 
