@@ -31,7 +31,7 @@ const svgFull = d3.select('#vizFull')
     .classed("svgFull-container", true) 
     .append('svg')
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 655 1000")
+    .attr("viewBox", "0 0 665 1000")
     .classed("svgFull-content-responsive", true)
 const svg2 = d3.select('#viz2')
 .append("div")
@@ -185,12 +185,6 @@ d3.json('data/monthly.json').then(data =>{
     .attr('y1', 0)
     .attr('y2', height)
 
-    // let newNum =
-    let newNum =[]
-    // num.forEach(e){
-        //   e.push(newNum).split(/(?=(?:\d{3})+$)/).join(",")
-        // }
-        
     function mouseover(event, d) {
         let num = d.count.toLocaleString()
             
