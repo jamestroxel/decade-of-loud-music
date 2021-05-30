@@ -98,8 +98,11 @@ d3.json('data/monthly.json').then(data =>{
 
     var div = d3.select("body").append("div")
     .attr("class", "tooltip")
-    .style("opacity", 0);
+    .style("opacity", 0)
+    .on('touchstart', mouseout);
 
+    var wrapper = d3.select(".page-wrap")
+    .on("scroll", mouseout);
 
     // svgFull.append('g')
     // .attr('class', 'axis')
