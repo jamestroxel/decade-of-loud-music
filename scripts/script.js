@@ -172,7 +172,9 @@ d3.json('data/monthly.json').then(data =>{
     .attr('cy', svgFullHeight/4)
     .attr('r', function(d, i){ return i * 5})
     .on('mouseover', mouseover)
-    .on('mouseout', mouseout);
+    .on('mouseout', mouseout)
+    .on('scroll', mouseout)
+    .on('touchstart', mouseout);
 
     scale.append("g")
     .append('line')
